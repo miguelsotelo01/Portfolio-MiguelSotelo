@@ -1,3 +1,3 @@
 # new-Personal-Portfolio
-my new personal portfolio for web development
+my new personal portfolio for development in react
 layout in process
