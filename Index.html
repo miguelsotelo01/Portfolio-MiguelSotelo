@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="description" content="Web portfolio">
      <title>Portafolio Miguel Angel Sotelo</title>
-     <link rel="stylesheet" href="/assets/css/Style.css">
+     <link rel="stylesheet" href="Style.css">
      <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
      <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
      <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Header-->
-    <header class="flex w-full fixed top-0 z-1"></header>
-    <nav class="flex justify-content-between w-full navbar">
-        <span class="logo cursor-pointer">
-            <img src="" alt="logo Portafolio">
-        </span>
-        <input type="checkbox" aria-label="checkbox para mostrar y quitar menu hamburguusa" class="checkbox xl:hidden">
-        <div class="hamburguer_lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
-        <div class="header_info flex align-items-center gap-3">
-            <ul class="flex flex-column xl:flex-row list-none">
-                <li>Sobre Mi</li>
-                <li>Servicios</li>
-                <li>Portafolio</li>
-                <li>Contacto</li>
-            </ul>
-            <div class="hireMe_button pt-4">
-                <a href="mailTo:miky.a.sotelo.97@gmail.com" 
-                aria-label="enviar mensaje al correo electronico"
-                class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">contratame</a>
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="assets/Images/logo (2).png" alt="Logo portafolio" width="50" height="50">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
-        </div>
-    </nav>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')">Sobre mí</li>
+                    <li onclick="scrollToSection('services')">Servicios</li>
+                    <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                    <li onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!--home page-->
     <section id="home"></section>
     <!--about me-->
