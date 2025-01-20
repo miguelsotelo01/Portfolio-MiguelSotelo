@@ -180,3 +180,103 @@ body::-webkit-scrollbar-track {
       right: 12rem;
   }
 }
+/* ------- HOME -------- */
+
+.right__content img{
+  height: 100%;
+  width: 100%;
+}
+.home__page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.message__bubble {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: auto;
+  background-color: var(--secondary-bg-color);
+}
+.triangle:after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  border: 15px solid;
+  border-color: var(--secondary-bg-color) transparent transparent transparent;
+}
+
+.message__text {
+  padding: 1rem;
+}
+.home__buttons button {
+  padding: 1rem 2rem;
+  color: var(--font-color);
+}
+
+.home__buttons a {
+  background-color: var(--secondary-bg-color);
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+.home__buttons button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-width: thin;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .message__bubble {
+      width: 160px;
+  }
+  .home__buttons a {
+      padding: 1rem 1rem !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home__page{
+      padding-top: 10rem;
+  }
+}
+/* ------- ABOUT ME -------- */
+
+.about__me .image img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+}
+
+.progress__bar {
+  width: 100%;
+  height: 0.2rem;
+  position: relative;
+  background-color: #707070;
+}
+
+.progress__bar span {
+  height: 100%;
+  position: absolute;
+}
+.progress__wordpress span {
+  background-color: #ff4900;
+  width: 90%;
+}
+.progress__html span {
+  background-color: #ff7004;
+  width: 70%;
+}
+.progress__angular span {
+  background-color: #ff9809;
+  width: 70%;
+}
+.progress__reactJs span {
+  background-color: #ff9809;
+  width: 70%;
+}
