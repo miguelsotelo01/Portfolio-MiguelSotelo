@@ -1,42 +1,45 @@
 import React from 'react';
 import aboutImg from '../assets/freelancer.jpg';
-
+import { useTranslation, Trans } from 'react-i18next';
 const AboutMe = () => {
+  const { t } = useTranslation();
   // Datos de educación para que sea fácil de mantener y escalar
   const education = [
-    { name: "Ingeniería en Sistemas de Información", progress: "20%", color: "bg-[#ff4900]" },
-    { name: "Argentina Programa 4.0 React", progress: "100%", color: "bg-[#ff7004]" },
-    { name: "Oracle Next Education Frontend Developer", progress: "100%", color: "bg-[#ff9809]" },
-    { name: "INTI: Full stack developer Angular/SpringBoot/MySQL", progress: "100%", color: "bg-[#ff9809]" }
-  ];
-
+  { name: t('about.education.systems'), progress: "20%", color: "bg-[#ff4900]" },
+  { name: t('about.education.argentina'), progress: "100%", color: "bg-[#ff7004]" },
+  { name: t('about.education.oracle'), progress: "100%", color: "bg-[#ff9809]" },
+  { name: t('about.education.inti'), progress: "100%", color: "bg-[#ff9809]" }
+];
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-16 px-6 lg:px-24">
       <div className="flex flex-col md:flex-row items-start justify-between w-full max-w-6xl mx-auto gap-12 lg:gap-20 px-4 lg:px-12">
         
         {/* INFO TEXTO */}
         <div className="flex-1 order-2 md:order-1">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white italic">Sobre mí</h2>
-          
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white italic">{t('about.title')}</h2>           
           <div className="text-gray-400 text-base lg:text-lg space-y-4 leading-relaxed">
             <p>
-              Soy un estudiante de segundo año de <span className="text-white font-medium">Ingeniería en Sistemas de Información</span> en la UTN FRT. 
-              Desde mi etapa escolar, la informática ha sido mi motor, llevándome a especializarme desde temprano.
+              <Trans i18nKey="about.p1">
+      Soy un estudiante de segundo año de <span className="text-slate-900 dark:text-white font-medium">Ingeniería en Sistemas de Información</span> en la UTN FRT. 
+      Desde mi etapa escolar, la informática ha sido mi motor, llevándome a especializarme desde temprano.
+              </Trans>
             </p>
             <p>
-              Me apasiona el <span className="text-[#ff4900] font-medium">desarrollo web</span>, las aplicaciones inmersivas y los videojuegos. 
-              Además de la ingeniería, soy profesor de geografía, entusiasta del deporte y la cultura geek.
+              <Trans i18nKey="about.p2">
+      Me apasiona el <span className="text-[#ff4900] font-medium">desarrollo web</span>, las aplicaciones inmersivas y los videojuegos. 
+      Además de la ingeniería, soy profesor de geografía, entusiasta del deporte y la cultura geek.
+              </Trans>
             </p>
           </div>
 
           {/* SECCIÓN EDUCACIÓN */}
           <div className="mt-10">
-            <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wider">Educación</h3>
+            <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white uppercase tracking-wider">{t('about.education_title')}</h3>
             <div className="space-y-6">
               {education.map((item, index) => (
                 <div key={index} className="space-y-2">
                   <div className="flex justify-between text-sm lg:text-base">
-                    <span className="text-gray-300">{item.name}</span>
+                    <span className="text-slate-700 dark:text-gray-300">{item.name}</span>
                     <span className="text-[#ff4900] font-bold">{item.progress}</span>
                   </div>
                   {/* Barra de progreso con Tailwind */}
@@ -56,7 +59,7 @@ const AboutMe = () => {
               href="mailto:miky.a.sotelo@email.com" 
               className="inline-block bg-[#ff4900] text-white px-8 py-3 rounded-lg font-bold hover:brightness-110 transition-all shadow-lg shadow-orange-900/20"
             >
-              Contrátame
+              {t('about.button')}
             </a>
           </div>
         </div>

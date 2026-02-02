@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 // Importa tus imágenes aquí (asegúrate de que estén en src/assets)
 import aluraFixImg from '../assets/alura fix.png';
 import ecommerceImg from '../assets/ecomerce.png';
@@ -9,24 +10,25 @@ import encriptadorImg from '../assets/encriptador.png';
 import organigramaImg from '../assets/organizacion.png';
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState('all');
 
   const categories = [
-    { id: 'all', label: 'Todos' },
-    { id: 'gym', label: 'Landing pages' },
-    { id: 'tours__Web', label: 'Plataforma' },
-    { id: 'e__commerce', label: 'E-commerce' },
-    { id: 'world__Tours', label: 'Tareas y demas' }
+    { id: 'all', label: t('portfolio.categories.all') },
+    { id: 'gym', label: t('portfolio.categories.landing') },
+    { id: 'tours__Web', label: t('portfolio.categories.platform') },
+    { id: 'e__commerce', label: t('portfolio.categories.ecommerce') },
+    { id: 'world__Tours', label: t('portfolio.categories.tasks') }
   ];
 
   const projects = [
-    { id: 1, title: "Alura Fix", category: "tours__Web", description: "Plataforma de videos hecha en React.", img: aluraFixImg },
-    { id: 2, title: "Alura Geek", category: "e__commerce", description: "E-commerce hecho en React.", img: ecommerceImg },
-    { id: 3, title: "Cuarso", category: "gym", description: "Aplicaciones hechas a la medida.", img: cuarsoImg },
-    { id: 4, title: "Admin", category: "gym", description: "La red mas eficiente.", img: businessImg },
-    { id: 5, title: "Task list", category: "world__Tours", description: "Proyecto básico de lista de tareas.", img: taskListImg },
-    { id: 6, title: "Encriptador", category: "world__Tours", description: "Encriptador de palabras.", img: encriptadorImg },
-    { id: 7, title: "Organigrama", category: "world__Tours", description: "Gestión de grupos de trabajo en React.", img: organigramaImg }
+    { id: 1, title: "Alura Fix", category: "tours__Web", description: t('portfolio.projects.p1_desc'), img: aluraFixImg },
+    { id: 2, title: "Alura Geek", category: "e__commerce", description: t('portfolio.projects.p2_desc'), img: ecommerceImg },
+    { id: 3, title: "Cuarso", category: "gym", description: t('portfolio.projects.p3_desc'), img: cuarsoImg },
+    { id: 4, title: "Admin", category: "gym", description: t('portfolio.projects.p4_desc'), img: businessImg },
+    { id: 5, title: "Task list", category: "world__Tours", description: t('portfolio.projects.p5_desc'), img: taskListImg },
+    { id: 6, title: "Encriptador", category: "world__Tours", description: t('portfolio.projects.p6_desc'), img: encriptadorImg },
+    { id: 7, title: "Organigrama", category: "world__Tours", description: t('portfolio.projects.p7_desc'), img: organigramaImg }
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -37,8 +39,8 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 px-6 lg:px-24">
       <div className="max-w-6xl mx-auto px-4 lg:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 italic">Mi trabajo</h2>
-          <p className="text-gray-400">Estos son algunos de los proyectos en los que he trabajado.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 italic text-slate-900 dark:text-white">{t('portfolio.title')}</h2>
+          <p className="text-slate-700 dark:text-gray-400">{t('portfolio.subtitle')}</p>
         </div>
 
         {/* FILTROS */}
@@ -48,8 +50,10 @@ const Portfolio = () => {
               key={cat.id}
               onClick={() => setActiveFilter(cat.id)}
               className={`px-4 py-2 text-sm font-medium transition-all border-b-2 ${
-                activeFilter === cat.id ? 'border-[#ff4900] text-white' : 'border-transparent text-gray-500 hover:text-white'
-              }`}
+  activeFilter === cat.id 
+    ? 'border-[#ff4900] text-[#ff4900] dark:text-white' 
+    : 'border-transparent text-slate-500 dark:text-gray-500 hover:text-slate-900 dark:hover:text-white'
+}`}
             >
               {cat.label}
             </button>
@@ -61,7 +65,7 @@ const Portfolio = () => {
           {filteredProjects.map(project => (
             <div 
               key={project.id} 
-              className="group relative h-[350px] overflow-hidden rounded-lg cursor-pointer animate-fadeIn"
+              className="group relative h-[350px] overflow-hidden rounded-lg cursor-pointer animate-fadeIn border border-slate-200 dark:border-white/10 shadow-sm hover:shadow-md transition-all duration-300"
             >
               <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
               

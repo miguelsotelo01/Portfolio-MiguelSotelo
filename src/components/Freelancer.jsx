@@ -1,7 +1,8 @@
 import React from 'react';
 import freelancerImg from '../assets/freelancer2.webp';
-
+import { useTranslation } from 'react-i18next';
 const Freelancer = () => {
+  const { t } = useTranslation();
   return (
     <section 
       className="w-full h-[50vh] my-10 flex flex-col justify-center items-center text-center px-6 relative"
@@ -14,17 +15,17 @@ const Freelancer = () => {
       }}
     >
       <p className="text-sm md:text-base uppercase tracking-[0.2em] mb-4 text-gray-300">
-        ¿Tienes un proyecto en mente?
+        {t('freelancer.question')}
       </p>
       <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">
-        Estoy disponible como freelancer
+        {t('freelancer.title')}
       </h2>
       <div className="pt-4">
         <a 
           href="mailto:miky.a.sotelo.97@gmail.com" 
           className="bg-[#ff4900] text-white px-10 py-3 rounded-lg font-bold hover:bg-orange-700 transition-all no-underline shadow-xl"
         >
-          Escríbeme
+          {t('freelancer.button')}
         </a>
       </div>
     </section>

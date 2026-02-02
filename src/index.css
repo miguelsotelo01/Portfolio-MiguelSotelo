@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* 1. Definimos tus colores personalizados de ingeniería aquí */
+@theme {
+  --color-naranja-principal: #ff4900;
+}
+
+/* 2. ESTA ES LA LÍNEA MÁGICA PARA v4 */
+/* Le dice a Tailwind: "Cuando veas la clase .dark, aplica los estilos dark:" */
+@variant dark (&:where(.dark, .dark *));
+
+/* Reset opcional para asegurar que el fondo cambie suavemente */
+@layer base {
+  html, body {
+    @apply transition-colors duration-500;
+  }
+}

@@ -1,14 +1,15 @@
 import React from 'react';
-
+import { useTranslation } from 'react-i18next';
 const Services = () => {
+  const { t } = useTranslation();
   // Array de servicios para facilitar el mantenimiento
   const servicesData = [
-    { name: "HTML", icon: "fa-brands fa-html5" },
-    { name: "CSS", icon: "fa-brands fa-css3-alt" },
-    { name: "AngularJS", icon: "fa-brands fa-angular" },
-    { name: "React Js", icon: "fa-brands fa-react" },
-    { name: "Desarrollo Móvil", icon: "fa-solid fa-mobile-screen-button" },
-    { name: "Desarrollo web", icon: "fa-solid fa-code" }
+    { name: t('services.items.html'), icon: "fa-brands fa-html5" },
+    { name: t('services.items.css'), icon: "fa-brands fa-css3-alt" },
+    { name: t('services.items.angular'), icon: "fa-brands fa-angular" },
+    { name: t('services.items.react'), icon: "fa-brands fa-react" },
+    { name: t('services.items.mobile'), icon: "fa-solid fa-mobile-screen-button" },
+    { name: t('services.items.web'), icon: "fa-solid fa-code" }
   ];
 
   return (
@@ -16,9 +17,9 @@ const Services = () => {
       <div className="max-w-6xl mx-auto px-4 lg:px-12">
         {/* TÍTULO Y DESCRIPCIÓN */}
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white italic">Mis servicios</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Estas son las tecnologías en las que puedes contratarme para trabajar en tu proyecto.
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white italic">{t('services.title')}</h2>
+          <p className="text-slate-700 dark:text-gray-400 max-w-2xl mx-auto">
+            {t('services.description')}
           </p>
         </div>
 
