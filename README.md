@@ -24,6 +24,7 @@ Este proyecto es mi portafolio profesional, mejorando el diseño vanilla asi com
   <em>Grilla de proyectos con filtrado dinámico y diseño responsivo.</em>
 </p>
 ## 🛠️ Stack Tecnológico
+
 * **Frontend:** React.js con Vite.
 * **Estilos:** Tailwind CSS v4 para un diseño moderno y minimalista.
 * **Internacionalización:** i18next para soporte multilingüe (ES/EN).
