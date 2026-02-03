@@ -1,5 +1,4 @@
-
-    {
+{
   "nav": {
     "page_title": "Miguel Sotelo | Desarrollador Web",
     "about": "Sobre mí",
@@ -16,66 +15,66 @@
     "work_button": "Mi trabajo"
   },
   "about": {
-  "title": "Sobre mí",
-  "p1": "Soy un estudiante de segundo año de <1>Ingeniería en Sistemas de Información</1> en la UTN FRT. Desde mi etapa escolar, la informática ha sido mi motor, llevándome a especializarme desde temprano.",
-  "p2": "Me apasiona el <1>desarrollo web</1>, las aplicaciones inmersivas y los videojuegos. Además de la ingeniería, soy profesor de geografía, entusiasta del deporte y la cultura geek.",
-  "education_title": "Educación",
-  "education": {
-    "systems": "Ingeniería en Sistemas de Información",
-    "argentina": "Argentina Programa 4.0 React",
-    "oracle": "Oracle Next Education Frontend Developer",
-    "inti": "INTI: Full stack developer Angular/SpringBoot/MySQL"
+    "title": "Sobre mí",
+    "p1": "Soy un estudiante de segundo año de <1>Ingeniería en Sistemas de Información</1> en la UTN FRT. Desde mi etapa escolar, la informática ha sido mi motor, llevándome a especializarme desde temprano.",
+    "p2": "Me apasiona el <1>desarrollo web</1>, las aplicaciones inmersivas y los videojuegos. Además de la ingeniería, soy profesor de geografía, entusiasta del deporte y la cultura geek.",
+    "education_title": "Educación",
+    "education": {
+      "systems": "Ingeniería en Sistemas de Información",
+      "argentina": "Argentina Programa 4.0 React",
+      "oracle": "Oracle Next Education Frontend Developer",
+      "inti": "INTI: Full stack developer Angular/SpringBoot/MySQL"
+    },
+    "button": "Contrátame"
   },
-  "button": "Contrátame"
-},
-"freelancer": {
-  "question": "¿TIENES UN PROYECTO EN MENTE?",
-  "title": "Estoy disponible como freelancer",
-  "button": "Escríbeme"
-},
-"services": {
-  "title": "Mis servicios",
-  "description": "Estas son las tecnologías en las que puedes contratarme para trabajar en tu proyecto.",
-  "items": {
-    "html": "HTML",
-    "css": "CSS",
-    "angular": "AngularJS",
-    "react": "React Js",
-    "mobile": "Desarrollo Móvil",
-    "web": "Desarrollo web"
-  }
-},
-"portfolio": {
-  "title": "Mi trabajo",
-  "subtitle": "Estos son algunos de los proyectos en los que he trabajado.",
-  "categories": {
-    "all": "Todos",
-    "landing": "Landing pages",
-    "platform": "Plataforma",
-    "ecommerce": "E-commerce",
-    "tasks": "Tareas y demás"
+  "freelancer": {
+    "question": "¿TIENES UN PROYECTO EN MENTE?",
+    "title": "Estoy disponible como freelancer",
+    "button": "Escríbeme"
   },
-  "projects": {
-    "p1_desc": "Plataforma de videos hecha en React.",
-    "p2_desc": "E-commerce hecho en React.",
-    "p3_desc": "Aplicaciones hechas a la medida.",
-    "p4_desc": "La red más eficiente.",
-    "p5_desc": "Proyecto básico de lista de tareas.",
-    "p6_desc": "Encriptador de palabras.",
-    "p7_desc": "Gestión de grupos de trabajo en React."
+  "services": {
+    "title": "Mis servicios",
+    "description": "Estas son las tecnologías en las que puedes contratarme para trabajar en tu proyecto.",
+    "items": {
+      "html": "HTML",
+      "css": "CSS",
+      "angular": "AngularJS",
+      "react": "React Js",
+      "mobile": "Desarrollo Móvil",
+      "web": "Desarrollo web"
+    }
+  },
+  "portfolio": {
+    "title": "Mi trabajo",
+    "subtitle": "Estos son algunos de los proyectos en los que he trabajado.",
+    "categories": {
+      "all": "Todos",
+      "landing": "Landing pages",
+      "platform": "Plataforma",
+      "ecommerce": "E-commerce",
+      "tasks": "Tareas y demás"
+    },
+    "projects": {
+      "p1_desc": "Plataforma de videos hecha en React.",
+      "p2_desc": "E-commerce hecho en React.",
+      "p3_desc": "Aplicaciones hechas a la medida.",
+      "p4_desc": "La red más eficiente.",
+      "p5_desc": "Proyecto básico de lista de tareas.",
+      "p6_desc": "Encriptador de palabras.",
+      "p7_desc": "Gestión de grupos de trabajo en React."
+    }
+  },
+  "footer": {
+    "socials_title": "Redes",
+    "dev_status": "Desarrollador Auténtico e innovador:",
+    "tagline": "Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento.",
+    "contact_title": "Contacto",
+    "write_me": "Escríbeme",
+    "services_title": "Mis Servicios",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Desarrollo Backend",
+    "db": "Base de Datos",
+    "cpp": "Desarrollo en C y C++",
+    "built_with": "Hecho con React y Tailwind."
   }
-},
-"footer": {
-  "socials_title": "Redes",
-  "dev_status": "Desarrollador Auténtico e innovador:",
-  "tagline": "Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento.",
-  "contact_title": "Contacto",
-  "write_me": "Escríbeme",
-  "services_title": "Mis Servicios",
-  "frontend": "Desarrollo Frontend",
-  "backend": "Desarrollo Backend",
-  "db": "Base de Datos",
-  "cpp": "Desarrollo en C y C++",
-  "built_with": "Hecho con React y Tailwind."
-}
 }

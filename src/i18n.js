@@ -8,7 +8,7 @@ import translationEN from './locales/en/translation.json';
 
 const resources = {
   es: { translation: translationES },
-  en: { translation: translationEN }
+  en: { translation: translationEN },
 };
 
 i18n
@@ -18,8 +18,8 @@ i18n
     resources,
     fallbackLng: 'es', // Si el idioma no se encuentra, usa español por defecto
     interpolation: {
-      escapeValue: false // React ya nos protege de ataques XSS
-    }
+      escapeValue: false, // React ya nos protege de ataques XSS
+    },
   });
 
 export default i18n;

@@ -15,66 +15,66 @@
     "work_button": "My work"
   },
   "about": {
-  "title": "About me",
-  "p1": "I am a second-year <1>Information Systems Engineering</1> student at UTN FRT. Since my school years, computing has been my engine, leading me to specialize early on.",
-  "p2": "I am passionate about <1>web development</1>, immersive applications and video games. In addition to engineering, I am a geography professor, sports enthusiast and geek culture lover.",
-  "education_title": "Education",
-  "education": {
-    "systems": "Information Systems Engineering",
-    "argentina": "Argentina Program 4.0 React",
-    "oracle": "Oracle Next Education Frontend Developer",
-    "inti": "INTI: Full stack developer Angular/SpringBoot/MySQL"
+    "title": "About me",
+    "p1": "I am a second-year <1>Information Systems Engineering</1> student at UTN FRT. Since my school years, computing has been my engine, leading me to specialize early on.",
+    "p2": "I am passionate about <1>web development</1>, immersive applications and video games. In addition to engineering, I am a geography professor, sports enthusiast and geek culture lover.",
+    "education_title": "Education",
+    "education": {
+      "systems": "Information Systems Engineering",
+      "argentina": "Argentina Program 4.0 React",
+      "oracle": "Oracle Next Education Frontend Developer",
+      "inti": "INTI: Full stack developer Angular/SpringBoot/MySQL"
+    },
+    "button": "Hire me"
   },
-  "button": "Hire me"
-},
-"freelancer": {
-  "question": "HAVE A PROJECT IN MIND?",
-  "title": "I'm available for freelance work",
-  "button": "Write to me"
-},
-"services": {
-  "title": "My services",
-  "description": "These are the technologies you can hire me to work on your project.",
-  "items": {
-    "html": "HTML",
-    "css": "CSS",
-    "angular": "AngularJS",
-    "react": "React Js",
-    "mobile": "Mobile Development",
-    "web": "Web Development"
-  }
-},
-"portfolio": {
-  "title": "My work",
-  "subtitle": "These are some of the projects I have worked on.",
-  "categories": {
-    "all": "All",
-    "landing": "Landing pages",
-    "platform": "Platform",
-    "ecommerce": "E-commerce",
-    "tasks": "Tasks and more"
+  "freelancer": {
+    "question": "HAVE A PROJECT IN MIND?",
+    "title": "I'm available for freelance work",
+    "button": "Write to me"
   },
-  "projects": {
-    "p1_desc": "Video platform built with React.",
-    "p2_desc": "E-commerce built with React.",
-    "p3_desc": "Custom-made applications.",
-    "p4_desc": "The most efficient network.",
-    "p5_desc": "Basic task list project.",
-    "p6_desc": "Word encryptor.",
-    "p7_desc": "Team management in React."
+  "services": {
+    "title": "My services",
+    "description": "These are the technologies you can hire me to work on your project.",
+    "items": {
+      "html": "HTML",
+      "css": "CSS",
+      "angular": "AngularJS",
+      "react": "React Js",
+      "mobile": "Mobile Development",
+      "web": "Web Development"
+    }
+  },
+  "portfolio": {
+    "title": "My work",
+    "subtitle": "These are some of the projects I have worked on.",
+    "categories": {
+      "all": "All",
+      "landing": "Landing pages",
+      "platform": "Platform",
+      "ecommerce": "E-commerce",
+      "tasks": "Tasks and more"
+    },
+    "projects": {
+      "p1_desc": "Video platform built with React.",
+      "p2_desc": "E-commerce built with React.",
+      "p3_desc": "Custom-made applications.",
+      "p4_desc": "The most efficient network.",
+      "p5_desc": "Basic task list project.",
+      "p6_desc": "Word encryptor.",
+      "p7_desc": "Team management in React."
+    }
+  },
+  "footer": {
+    "socials_title": "Socials",
+    "dev_status": "Authentic and innovative Developer:",
+    "tagline": "I develop what you need, with a focus on usability and performance.",
+    "contact_title": "Contact",
+    "write_me": "Write to me",
+    "services_title": "My Services",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "db": "Database",
+    "cpp": "C and C++ Development",
+    "built_with": "Built with React and Tailwind."
   }
-},
-"footer": {
-  "socials_title": "Socials",
-  "dev_status": "Authentic and innovative Developer:",
-  "tagline": "I develop what you need, with a focus on usability and performance.",
-  "contact_title": "Contact",
-  "write_me": "Write to me",
-  "services_title": "My Services",
-  "frontend": "Frontend Development",
-  "backend": "Backend Development",
-  "db": "Database",
-  "cpp": "C and C++ Development",
-  "built_with": "Built with React and Tailwind."
-}
 }

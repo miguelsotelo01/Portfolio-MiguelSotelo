@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import './index.css'
+import './index.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
@@ -21,11 +21,11 @@ function App() {
     }
     localStorage.setItem('theme', theme);
   }, [theme]);
-useEffect(() => {
-  document.title = t('nav.page_title');
-}, [i18n.language, t]);
+  useEffect(() => {
+    document.title = t('nav.page_title');
+  }, [i18n.language, t]);
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   };
   return (
     <main className="bg-white dark:bg-black min-h-screen text-slate-900 dark:text-white overflow-x-hidden selection:bg-[#ff4900] transition-colors duration-500">
