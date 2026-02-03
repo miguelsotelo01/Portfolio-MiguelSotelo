@@ -1,16 +1,53 @@
-# React + Vite
+# Portfolio Profesional v2.0 - Miguel Sotelo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-success)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Currently, two official plugins are available:
+Este proyecto es mi portafolio profesional, mejorando el diseño vanilla asi como con un enfoque en la escalabilidad, el rendimiento y la experiencia de usuario (UX).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo En Vivo
+[Ver Portafolio Online](https://portfolio-miguel-sotelo.vercel.app)
 
-## React Compiler
+---
+## 📸 Visual Review
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### Interfaz Adaptativa (Light & Dark Mode)
+| Modo Oscuro | Modo Claro |
+| :---: | :---: |
+| ![Dark Mode](./public/screenshots/hero-dark.png) | ![Light Mode](./public/screenshots/hero-light.png) |
 
-## Expanding the ESLint configuration
+### Portafolio & Experiencia de Usuario
+<p align="center">
+  <img src="./public/screenshots/portfolio-grid.png" width="100%" alt="Grilla de Proyectos" />
+  <br>
+  <em>Grilla de proyectos con filtrado dinámico y diseño responsivo.</em>
+</p>
+## 🛠️ Stack Tecnológico
+* **Frontend:** React.js con Vite.
+* **Estilos:** Tailwind CSS v4 para un diseño moderno y minimalista.
+* **Internacionalización:** i18next para soporte multilingüe (ES/EN).
+* **Gestión de Estado:** Hooks de React (useState, useEffect).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Características Principales
+* **Multilingüe:** Traducción dinámica completa.
+* **Modo Oscuro/Claro:** Implementación de temas con persistencia mediante `localStorage`.
+* **Diseño Responsivo:** Optimizado para dispositivos móviles, tablets y escritorio.
+* **Arquitectura Limpia:** Código indentado bajo estándares de Prettier y separado por componentes reutilizables.
+
+## 👨‍💻 Perfil Académico
+Actualmente soy estudiante de **Ingeniería en Sistemas de Información** en la **Universidad Tecnológica Nacional (UTN FRT)**. Este portafolio refleja mi capacidad para integrar lógica de negocio compleja con interfaces de usuario pulidas, asi como un lugar donde realmente porder poner mi trabajo.
+
+## ⚙️ Instalación Local
+Si querés probar este proyecto localmente:
+
+1. Cloná el repositorio:
+   `git clone https://github.com/miguelsotelo01/Portfolio-MiguelSotelo.git`
+2. Instalá las dependencias:
+   `npm install`
+3. Iniciá el servidor de desarrollo:
+   `npm run dev`
+
+---
+
+Desarrollado con ❤️ por Miguel Sotelo.
