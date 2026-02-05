@@ -1,6 +1,6 @@
 {
   "nav": {
-    "page_title": "Miguel Sotelo | Desarrollador Web",
+    "page_title": "Miguel A. Sotelo | Desarrollador Web",
     "about": "Sobre mí",
     "services": "Servicios",
     "portfolio": "Portafolio",
@@ -9,7 +9,7 @@
   },
   "hero": {
     "greeting": "HOLA, YO SOY",
-    "title": "Sr. Miguel Sotelo",
+    "title": "Miguel A. Sotelo",
     "description": "Desarrollador Web con enfoque en soluciones escalables y diseño moderno.",
     "cv_button": "Descargar CV",
     "work_button": "Mi trabajo"

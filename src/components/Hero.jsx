@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-8xl font-black mb-4 leading-tight text-slate-900 dark:text-white">
-            Sr. Miguel <br className="hidden lg:block" /> Sotelo
+            Miguel A. <br className="hidden lg:block" /> Sotelo
           </h1>
 
           <p className="text-gray-400 text-lg md:text-2xl mb-10 max-w-lg mx-auto lg:mx-0">

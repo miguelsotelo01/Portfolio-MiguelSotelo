@@ -1,6 +1,6 @@
 {
   "nav": {
-    "page_title": "Miguel Sotelo | Web Developer",
+    "page_title": "Miguel A. Sotelo | Web Developer",
     "about": "About me",
     "services": "Services",
     "portfolio": "Portfolio",
@@ -9,7 +9,7 @@
   },
   "hero": {
     "greeting": "HI, I AM",
-    "title": "Mr. Miguel Sotelo",
+    "title": "Miguel A. Sotelo",
     "description": "Web Developer focused on scalable solutions and modern design.",
     "cv_button": "Download CV",
     "work_button": "My work"
