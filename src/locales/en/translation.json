@@ -50,9 +50,9 @@
     "categories": {
       "all": "All",
       "landing": "Landing pages",
-      "platform": "Platform",
-      "ecommerce": "E-commerce",
-      "tasks": "Tasks and more"
+      "platform": "Web Applications",
+      "ecommerce": "Mobile Apps",
+      "tasks": "Tools & Logic"
     },
     "projects": {
       "p1_desc": "Video platform built with React.",
