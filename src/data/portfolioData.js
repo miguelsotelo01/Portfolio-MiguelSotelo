@@ -21,7 +21,7 @@ export const PROJECTS = [
     category: 'web_apps',
     descriptionKey: 'portfolio.projects.p1_desc',
     img: aluraFixImg,
-    techStack: ['React', 'Tailwind'],
+    techStack: ['React', 'Typescript', 'Node.js'],
     links: {
       repo: 'https://github.com/miguelsotelo01/...',
       demo: 'https://...',
@@ -33,7 +33,7 @@ export const PROJECTS = [
     category: 'web_apps',
     descriptionKey: 'portfolio.projects.p2_desc',
     img: ecommerceImg,
-    techStack: ['JavaScript', 'HTML', 'CSS'],
+    techStack: ['React', 'Typescript', 'Node.js'],
     links: { repo: '#', demo: '#' },
   },
   {
@@ -42,7 +42,7 @@ export const PROJECTS = [
     category: 'landing',
     descriptionKey: 'portfolio.projects.p3_desc',
     img: cuarsoImg,
-    techStack: ['React', 'Vite'],
+    techStack: ['HTML', 'CSS', 'JavaScript'],
     links: { repo: '#', demo: '#' },
   },
   {
@@ -51,7 +51,7 @@ export const PROJECTS = [
     category: 'landing',
     descriptionKey: 'portfolio.projects.p4_desc',
     img: businessImg,
-    techStack: ['React', 'Node.js'],
+    techStack: ['html', 'css', 'javascript'],
     links: { repo: '#', demo: '#' },
   },
   {
@@ -60,7 +60,7 @@ export const PROJECTS = [
     category: 'tools',
     descriptionKey: 'portfolio.projects.p5_desc',
     img: taskListImg,
-    techStack: ['JavaScript'],
+    techStack: ['React', 'JavaScript'],
     links: { repo: '#', demo: '#' },
   },
   {
@@ -78,7 +78,37 @@ export const PROJECTS = [
     category: 'tools',
     descriptionKey: 'portfolio.projects.p7_desc',
     img: organigramaImg,
-    techStack: ['React'],
+    techStack: ['React', 'JavaScript'],
     links: { repo: '#', demo: '#' },
+  },
+];
+export const EDUCATION = [
+  {
+    id: 1,
+    year: '2021',
+    title: 'Programador fullstack angular-java',
+    institution: 'Instituto nacional de tecnologia industrial (INTI)-argentina programa',
+    description: 'Formacion completa en desarrollo web fullstack con Angular y Java.',
+  },
+  {
+    id: 2,
+    year: '2022',
+    title: 'Programador React-JavaScript argentina programa 4.0',
+    institution: 'Universidad Tecnológica Nacional (UTN) - Argentina Programa',
+    description: 'Formacion completa en desarrollo web fullstack con React y JavaScript.',
+  },
+  {
+    id: 3,
+    year: '2023',
+    title: 'Bootcamp Full Stack Developer React y Node.js',
+    institution: 'Alura Latam',
+    description: 'Formacion completa en desarrollo web fullstack con React y Node.js.',
+  },
+  {
+    id: 4,
+    year: '2024 - Presente',
+    title: 'Ingeniería en Sistemas de Información',
+    institution: 'Universidad Tecnológica Nacional (UTN) facultad regional tucumán',
+    description: 'Formación en ingeniería en sistemas de información.',
   },
 ];

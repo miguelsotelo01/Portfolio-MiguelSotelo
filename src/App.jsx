@@ -4,6 +4,7 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
+import Education from './components/Education'; // <- Nueva importación
 import Freelancer from './components/Freelancer';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
@@ -35,6 +36,7 @@ function App() {
       <Freelancer />
       <Services />
       <Portfolio />
+      <Education />
       <Footer />
     </main>
   );
