@@ -79,9 +79,9 @@ const Navbar = ({ toggleTheme, theme }) => {
             </li>
             <li
               className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-colors"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('education')}
             >
-              {t('nav.contact')}
+              {t('nav.education')}
             </li>
           </ul>
           <button

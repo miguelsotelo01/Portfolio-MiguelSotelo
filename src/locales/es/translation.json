@@ -5,27 +5,23 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "contact": "Contacto",
-    "hire_me": "Contrátame"
+    "hire_me": "Contrátame",
+    "education": "Educación"
   },
   "hero": {
-    "greeting": "HOLA, YO SOY",
+    "greeting": "Hola, bienvenido a mi espacio",
     "title": "Miguel A. Sotelo",
     "description": "Desarrollador Web con enfoque en soluciones escalables y diseño moderno.",
     "cv_button": "Descargar CV",
-    "work_button": "Mi trabajo"
+    "work_button": "Mi trabajo",
+    "role_prefix": "Estudiante de",
+    "role_title": "Ingeniería en Sistemas"
   },
   "about": {
     "title": "Sobre mí",
-    "p1": "Soy un estudiante de segundo año de <1>Ingeniería en Sistemas de Información</1> en la UTN FRT. Desde mi etapa escolar, la informática ha sido mi motor, llevándome a especializarme desde temprano.",
-    "p2": "Me apasiona el <1>desarrollo web</1>, las aplicaciones inmersivas y los videojuegos. Además de la ingeniería, soy profesor de geografía, entusiasta del deporte y la cultura geek.",
-    "education_title": "Educación",
-    "education": {
-      "systems": "Ingeniería en Sistemas de Información",
-      "argentina": "Argentina Programa 4.0 React",
-      "oracle": "Oracle Next Education Frontend Developer",
-      "inti": "INTI: Full stack developer Angular/SpringBoot/MySQL"
-    },
-    "button": "Contrátame"
+    "p1": "Soy estudiante de segundo año de Ingeniería en Sistemas de Información en la UTN FRT. Mi motor es la resolución de problemas técnicos y la optimización de procesos mediante el software.",
+    "p2": "Me especializo en el desarrollo web y la arquitectura de aplicaciones escalables. Mi enfoque está en construir código limpio, eficiente y con una lógica sólida basada en mi formación de ingeniería.",
+    "button": "Ver mis proyectos"
   },
   "freelancer": {
     "question": "¿TIENES UN PROYECTO EN MENTE?",
@@ -33,15 +29,21 @@
     "button": "Escríbeme"
   },
   "services": {
-    "title": "Mis servicios",
-    "description": "Estas son las tecnologías en las que puedes contratarme para trabajar en tu proyecto.",
+    "title": "Especialidades Técnicas",
+    "description": "Soluciones enfocadas en la eficiencia, la arquitectura escalable y la resolución lógica de problemas.",
     "items": {
-      "html": "HTML",
-      "css": "CSS",
-      "angular": "AngularJS",
-      "react": "React Js",
-      "mobile": "Desarrollo Móvil",
-      "web": "Desarrollo web"
+      "frontend": {
+        "title": "Arquitectura Frontend",
+        "desc": "Construcción de interfaces dinámicas y de alto rendimiento utilizando React y Tailwind CSS, garantizando una experiencia de usuario fluida."
+      },
+      "logic": {
+        "title": "Lógica de Sistemas",
+        "desc": "Aplicación de estructuras de datos y algoritmos para optimizar el rendimiento del software, con el rigor analítico de la formación en ingeniería."
+      },
+      "solutions": {
+        "title": "Soluciones Escalables",
+        "desc": "Desarrollo de aplicaciones web modernas con enfoque en la mantenibilidad del código y la integración eficiente de herramientas de desarrollo."
+      }
     }
   },
   "portfolio": {
@@ -62,6 +64,33 @@
       "p5_desc": "Proyecto básico de lista de tareas.",
       "p6_desc": "Encriptador de palabras.",
       "p7_desc": "Gestión de grupos de trabajo en React."
+    }
+  },
+  "edu": {
+    "title": "Educación y trayectoria",
+    "utn": {
+      "year": "2024 - Presente",
+      "title": "Ingeniería en Sistemas de Información",
+      "institution": "Universidad Tecnológica Nacional (UTN) facultad regional tucumán",
+      "desc": "Formación en ingeniería en sistemas de información."
+    },
+    "alura": {
+      "year": "2023",
+      "title": "Bootcamp Desarrollador web React y Node.js",
+      "institution": "Alura Latam-Oracle Next Education",
+      "desc": "Formacion completa en desarrollo web con React y Node.js."
+    },
+    "argentina": {
+      "year": "2022",
+      "title": "Argentina Programa 4.0 React",
+      "institution": "Universidad Tecnológica Nacional (UTN) - Argentina Programa",
+      "desc": "Formacion completa en desarrollo web con React y JavaScript."
+    },
+    "inti": {
+      "year": "2021",
+      "title": "Programador fullstack angular-java",
+      "institution": "Instituto nacional de tecnologia industrial (INTI)-argentina programa",
+      "desc": "Formacion completa en desarrollo web fullstack con Angular y Java."
     }
   },
   "footer": {

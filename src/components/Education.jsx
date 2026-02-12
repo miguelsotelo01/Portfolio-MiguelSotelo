@@ -1,12 +1,14 @@
 import React from 'react';
 import { EDUCATION } from '../data/portfolioData';
+import { useTranslation } from 'react-i18next';
 
 const Education = () => {
+  const { t } = useTranslation();
   return (
     <section id="education" className="py-20 px-6 lg:px-24 bg-white dark:bg-transparent">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-16 text-center italic text-slate-900 dark:text-white">
-          Educación y Trayectoria
+          {t('edu.title')}
         </h2>
 
         <div className="relative">
@@ -33,16 +35,16 @@ const Education = () => {
                   <div className="w-full md:w-5/12 mt-6 md:mt-0">
                     <div className="p-6 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
                       <span className="text-[#ff4900] font-bold text-sm uppercase tracking-wider">
-                        {item.year}
+                        {t(item.yearkey)}
                       </span>
                       <h3 className="text-xl font-bold mt-2 text-slate-900 dark:text-white">
-                        {item.title}
+                        {t(item.titleKey)}
                       </h3>
                       <p className="text-slate-600 dark:text-orange-100/70 font-medium italic">
-                        {item.institution}
+                        {t(item.institutionKey)}
                       </p>
                       <p className="mt-4 text-sm text-slate-700 dark:text-gray-400 leading-relaxed">
-                        {item.description}
+                        {t(item.descriptionKey)}
                       </p>
                     </div>
                   </div>

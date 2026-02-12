@@ -61,16 +61,16 @@ const ProjectCard = ({ project, t }) => (
 
     {/* Overlay con Glassmorphism */}
     <div className="absolute inset-0 bg-[#ff4900]/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-400 flex flex-col items-center justify-center text-center px-6">
-      <h3 className="text-2xl font-bold transform translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
+      <h3 className="text-2xl font-bold transform translate-y-10 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-300">
         {project.title}
       </h3>
 
-      <p className="mt-2 text-sm transform translate-y-10 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+      <p className="mt-2 text-sm transform translate-y-10 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-300 delay-75">
         {t(project.descriptionKey)}
       </p>
 
       {/* Sugerencia A: Badges de Tecnologías - v2.2 */}
-      <div className="flex flex-wrap justify-center gap-2 mt-4 transform translate-y-10 group-hover:translate-y-0 transition-transform duration-300 delay-100">
+      <div className="flex flex-wrap justify-center gap-2 mt-4 transform translate-y-10 group-hover:translate-y-0 group-active:translate-y-0 transition-transform duration-300 delay-100">
         {project.techStack &&
           project.techStack.map((tech, index) => (
             <span

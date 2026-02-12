@@ -5,27 +5,23 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "hire_me": "Hire me"
+    "hire_me": "Hire me",
+    "education": "Education"
   },
   "hero": {
-    "greeting": "HI, I AM",
+    "greeting": "Hello, welcome to my space.",
     "title": "Miguel A. Sotelo",
     "description": "Web Developer focused on scalable solutions and modern design.",
     "cv_button": "Download CV",
-    "work_button": "My work"
+    "work_button": "My work",
+    "role_prefix": "Information Systems Engineering",
+    "role_title": "Student"
   },
   "about": {
     "title": "About me",
-    "p1": "I am a second-year <1>Information Systems Engineering</1> student at UTN FRT. Since my school years, computing has been my engine, leading me to specialize early on.",
-    "p2": "I am passionate about <1>web development</1>, immersive applications and video games. In addition to engineering, I am a geography professor, sports enthusiast and geek culture lover.",
-    "education_title": "Education",
-    "education": {
-      "systems": "Information Systems Engineering",
-      "argentina": "Argentina Program 4.0 React",
-      "oracle": "Oracle Next Education Frontend Developer",
-      "inti": "INTI: Full stack developer Angular/SpringBoot/MySQL"
-    },
-    "button": "Hire me"
+    "p1": "I am a second-year Information Systems Engineering student at UTN FRT. My driving force is technical problem-solving and process optimization through software.",
+    "p2": "I specialize in web development and scalable application architecture. My focus is on building clean, efficient code with solid logic based on my engineering background.",
+    "button": "View my projects"
   },
   "freelancer": {
     "question": "HAVE A PROJECT IN MIND?",
@@ -33,15 +29,21 @@
     "button": "Write to me"
   },
   "services": {
-    "title": "My services",
-    "description": "These are the technologies you can hire me to work on your project.",
+    "title": "Technical Specializations",
+    "description": "Solutions focused on efficiency, scalable architecture, and logical problem-solving.",
     "items": {
-      "html": "HTML",
-      "css": "CSS",
-      "angular": "AngularJS",
-      "react": "React Js",
-      "mobile": "Mobile Development",
-      "web": "Web Development"
+      "frontend": {
+        "title": "Frontend Architecture",
+        "desc": "Building dynamic, high-performance interfaces using React and Tailwind CSS, ensuring a seamless user experience."
+      },
+      "logic": {
+        "title": "Systems Logic",
+        "desc": "Applying data structures and algorithms to optimize software performance, backed by engineering analytical rigor."
+      },
+      "solutions": {
+        "title": "Scalable Solutions",
+        "desc": "Developing modern web applications with a focus on code maintainability and efficient dev-tool integration."
+      }
     }
   },
   "portfolio": {
@@ -62,6 +64,33 @@
       "p5_desc": "Basic task list project.",
       "p6_desc": "Word encryptor.",
       "p7_desc": "Team management in React."
+    }
+  },
+  "edu": {
+    "title": "Education and career",
+    "utn": {
+      "year": "2024 - Present",
+      "title": "Information Systems Engineering",
+      "institution": "National Technological University (UTN) Tucumán Regional Faculty",
+      "desc": "Formation in information systems engineering."
+    },
+    "alura": {
+      "year": "2023",
+      "title": "Full Stack web Developer React and Node.js",
+      "institution": "Alura Latam-Oracle Next Education",
+      "desc": "Complete training in web development with React and Node.js."
+    },
+    "argentina": {
+      "year": "2022",
+      "title": "Argentina Program 4.0 React",
+      "institution": "National Technological University (UTN) - Argentina Program",
+      "desc": "Complete training in web development with React and JavaScript."
+    },
+    "inti": {
+      "year": "2021",
+      "title": "Fullstack programmer angular-java",
+      "institution": "National Institute of Industrial Technology (INTI) - Argentina Program",
+      "desc": "Complete training in fullstack web development with Angular and Java."
     }
   },
   "footer": {

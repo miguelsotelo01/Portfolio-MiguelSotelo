@@ -1,90 +1,88 @@
 import React from 'react';
 import aboutImg from '../assets/freelancer.jpg';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+
 const AboutMe = () => {
   const { t } = useTranslation();
-  // Datos de educación
-  const education = [
-    { name: t('about.education.systems'), progress: '20%', color: 'bg-[#ff4900]' },
-    { name: t('about.education.argentina'), progress: '100%', color: 'bg-[#ff7004]' },
-    { name: t('about.education.oracle'), progress: '100%', color: 'bg-[#ff9809]' },
-    { name: t('about.education.inti'), progress: '100%', color: 'bg-[#ff9809]' },
+
+  // Categorías técnicas para reemplazar las barras planas
+  const techCategories = [
+    { title: 'Frontend', skills: ['React', 'Tailwind CSS', 'JavaScript (ES6+)'] },
+    { title: 'Backend & Tools', skills: ['Node.js', 'Git/GitHub', 'Vite'] },
+    { title: 'Engineering Foundations', skills: ['Logic', 'Data Structures', 'Algorithms'] },
   ];
+
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-16 px-6 lg:px-24"
+      className="py-20 px-6 lg:px-24 bg-white dark:bg-transparent overflow-hidden"
     >
-      <div className="flex flex-col md:flex-row items-start justify-between w-full max-w-6xl mx-auto gap-12 lg:gap-20 px-4 lg:px-12">
-        {/* Informacion del texto */}
-        <div className="flex-1 order-2 md:order-1">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white italic">
-            {t('about.title')}
-          </h2>
-          <div className="text-gray-400 text-base lg:text-lg space-y-4 leading-relaxed">
-            <p>
-              <Trans i18nKey="about.p1">
-                Soy un estudiante de segundo año de{' '}
-                <span className="text-slate-900 dark:text-white font-medium">
-                  Ingeniería en Sistemas de Información
-                </span>{' '}
-                en la UTN FRT. Desde mi etapa escolar, la informática ha sido mi motor, llevándome a
-                especializarme desde temprano.
-              </Trans>
-            </p>
-            <p>
-              <Trans i18nKey="about.p2">
-                Me apasiona el <span className="text-[#ff4900] font-medium">desarrollo web</span>,
-                las aplicaciones inmersivas y los videojuegos. Además de la ingeniería, soy profesor
-                de geografía, entusiasta del deporte y la cultura geek.
-              </Trans>
-            </p>
-          </div>
-
-          {/* Sección de educación */}
-          <div className="mt-10">
-            <h3 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white uppercase tracking-wider">
-              {t('about.education_title')}
-            </h3>
-            <div className="space-y-6">
-              {education.map((item, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between text-sm lg:text-base">
-                    <span className="text-slate-700 dark:text-gray-300">{item.name}</span>
-                    <span className="text-[#ff4900] font-bold">{item.progress}</span>
-                  </div>
-                  {/* Barra de progreso */}
-                  <div className="w-full h-1.5 bg-gray-800 rounded-full overflow-hidden">
-                    <div
-                      className={`h-full ${item.color} transition-all duration-1000 ease-out`}
-                      style={{ width: item.progress }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        {/* Imagen: Ahora con tamaño controlado y decoración técnica */}
+        <div className="w-full lg:w-2/5 order-1">
+          <div className="relative group">
+            <div className="absolute -inset-2 bg-gradient-to-r from-[#ff4900] to-orange-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            <div className="relative rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden shadow-2xl">
+              <img
+                src={aboutImg}
+                alt="Miguel Sotelo - Dev"
+                className="w-full h-[400px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              />
             </div>
-          </div>
-
-          <div className="mt-10">
-            <a
-              href="mailto:miky.a.sotelo@email.com"
-              className="inline-block bg-[#ff4900] text-white px-8 py-3 rounded-lg font-bold hover:brightness-110 transition-all shadow-lg shadow-orange-900/20"
-            >
-              {t('about.button')}
-            </a>
+            {/* Elemento geométrico de ingeniería */}
+            <div className="absolute -bottom-4 -left-4 w-20 h-20 border-b-4 border-l-4 border-[#ff4900] -z-10"></div>
           </div>
         </div>
 
-        {/* Imagen de apoyo */}
-        <div className="flex-1 order-1 md:order-2 w-full">
-          <div className="relative group overflow-hidden rounded-2xl">
-            <img
-              src={aboutImg}
-              alt="Miguel trabajando"
-              className="w-full h-[300px] md:h-[500px] lg:h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
-            />
-            {/* Overlay para mejorar el contraste */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        {/* Contenido de Texto */}
+        <div className="w-full lg:w-3/5 order-2 space-y-8">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-black mb-4 italic text-slate-900 dark:text-white">
+              {t('about.title')}
+            </h2>
+            <div className="h-1.5 w-20 bg-[#ff4900] rounded-full"></div>
+          </div>
+
+          <div className="space-y-4 text-slate-700 dark:text-gray-400 text-lg leading-relaxed">
+            <p>
+              {t('about.p1')}{' '}
+              {/* "Estudiante de Ingeniería en Sistemas enfocado en soluciones escalables..." */}
+            </p>
+            <p>
+              {t('about.p2')}{' '}
+              {/* "Mi objetivo es aplicar la lógica y la arquitectura sólida para crear productos..." */}
+            </p>
+          </div>
+
+          {/* Nueva Grilla de Skills (v2.4) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+            {techCategories.map((cat, idx) => (
+              <div
+                key={idx}
+                className="space-y-3 p-4 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-100 dark:border-white/10"
+              >
+                <h4 className="font-black text-[#ff4900] text-sm uppercase tracking-widest">
+                  {cat.title}
+                </h4>
+                <ul className="flex flex-wrap gap-2">
+                  {cat.skills.map((skill, i) => (
+                    <li key={i} className="text-sm font-medium text-slate-900 dark:text-gray-300">
+                      • {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="pt-6">
+            <a
+              href="#portfolio"
+              className="inline-flex items-center gap-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all shadow-xl"
+            >
+              {t('about.button')}
+              <i className="fa-solid fa-arrow-right text-sm"></i>
+            </a>
           </div>
         </div>
       </div>

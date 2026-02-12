@@ -1,48 +1,68 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 const Services = () => {
   const { t } = useTranslation();
-  // Array de servicios
+
   const servicesData = [
-    { name: t('services.items.html'), icon: 'fa-brands fa-html5' },
-    { name: t('services.items.css'), icon: 'fa-brands fa-css3-alt' },
-    { name: t('services.items.angular'), icon: 'fa-brands fa-angular' },
-    { name: t('services.items.react'), icon: 'fa-brands fa-react' },
-    { name: t('services.items.mobile'), icon: 'fa-solid fa-mobile-screen-button' },
-    { name: t('services.items.web'), icon: 'fa-solid fa-code' },
+    {
+      id: 'frontend',
+      icon: 'fa-solid fa-layer-group',
+      titleKey: 'services.items.frontend.title',
+      descKey: 'services.items.frontend.desc',
+    },
+    {
+      id: 'logic',
+      icon: 'fa-solid fa-microchip',
+      titleKey: 'services.items.logic.title',
+      descKey: 'services.items.logic.desc',
+    },
+    {
+      id: 'solutions',
+      icon: 'fa-solid fa-rocket',
+      titleKey: 'services.items.solutions.title',
+      descKey: 'services.items.solutions.desc',
+    },
   ];
 
   return (
-    <section id="services" className="py-20 px-6">
-      <div className="max-w-6xl mx-auto px-4 lg:px-12">
-        {/* Titulo y descripcion */}
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white italic">
+    <section
+      id="services"
+      className="py-20 px-6 lg:px-24 bg-white dark:bg-transparent overflow-hidden"
+    >
+      <div className="max-w-6xl mx-auto">
+        {/* Encabezado con estilo v2.4 */}
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic tracking-tighter">
             {t('services.title')}
           </h2>
-          <p className="text-slate-700 dark:text-gray-400 max-w-2xl mx-auto">
+          <div className="h-1.5 w-24 bg-[#ff4900] mx-auto rounded-full"></div>
+          <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
             {t('services.description')}
           </p>
         </div>
 
-        {/* Grilla de tarjetas */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {servicesData.map((service, index) => (
+        {/* Grilla de Especialidades */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {servicesData.map((service) => (
             <div
-              key={index}
-              className="group flex items-center gap-5 p-6 bg-[#111111] hover:bg-[#ff4900] transition-all duration-300 rounded-lg cursor-default"
+              key={service.id}
+              className="group p-8 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-[#ff4900]/10"
             >
-              {/* Círculo del Icono */}
-              <div className="w-14 h-14 bg-black rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-white">
+              {/* Icono con contenedor dinámico */}
+              <div className="w-16 h-16 bg-[#ff4900]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#ff4900] transition-colors duration-300">
                 <i
-                  className={`${service.icon} text-2xl text-white group-hover:text-black transition-colors duration-300`}
+                  className={`${service.icon} text-3xl text-[#ff4900] group-hover:text-white transition-colors duration-300`}
                 ></i>
               </div>
 
-              {/* Nombre del Servicio */}
-              <span className="text-lg font-semibold text-white transition-colors duration-300">
-                {service.name}
-              </span>
+              <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-4">
+                {t(service.titleKey)}
+              </h3>
+
+              <p className="text-slate-600 dark:text-gray-400 leading-relaxed text-sm md:text-base">
+                {t(service.descKey)}
+              </p>
             </div>
           ))}
         </div>
