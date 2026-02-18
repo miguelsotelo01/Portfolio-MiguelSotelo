@@ -2,11 +2,27 @@
   "nav": {
     "page_title": "Miguel A. Sotelo | Web Developer",
     "about": "About me",
-    "services": "Services",
+    "expertise": "capabilities",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "hire_me": "Hire me",
+    "hire_me": "Contact me",
     "education": "Education"
+  },
+  "contact": {
+    "modal_title": "Contact me",
+    "modal_subtitle": "Leave me your message",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_subject": "Subject",
+    "form_message": "Message",
+    "subject_freelance": "Freelance Project",
+    "subject_recruiter": "Job Proposal",
+    "subject_general": "General Inquiry",
+    "submit_button": "Send Message",
+    "success_title": "Submission Successful!",
+    "success_text": "I have received your message correctly. I will contact you soon to start working.",
+    "close_button": "Return to Site",
+    "sending": "Processing submission..."
   },
   "hero": {
     "greeting": "Hello, welcome to my space.",
@@ -58,12 +74,15 @@
     },
     "projects": {
       "p1_desc": "Video platform built with React.",
-      "p2_desc": "E-commerce built with React.",
+      "p2_desc": "E-commerce built with HTML, CSS and JavaScript.",
       "p3_desc": "Custom-made applications.",
       "p4_desc": "The most efficient network.",
       "p5_desc": "Basic task list project.",
       "p6_desc": "Word encryptor.",
-      "p7_desc": "Team management in React."
+      "p7_desc": "Team management in React.",
+      "p8_desc": "Custom applications.",
+      "P9_desc": "Task list in Angular 13.",
+      "p10_desc": "Task manager PWA built with React."
     }
   },
   "edu": {

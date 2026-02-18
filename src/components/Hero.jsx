@@ -55,11 +55,16 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-5 justify-center lg:justify-start">
             <a
-              href="/assets/Miguel Angel Sotelo CV.docx"
-              className="group relative w-full sm:w-auto overflow-hidden bg-[#ff4900] text-white px-10 py-4 rounded-xl font-black transition-all duration-300 hover:scale-105"
-              download
+              href="https://drive.google.com/file/d/1Hl1l0gCaY4oYRsgbAa2vCoK3WsF9DzLg/view?usp=sharing" // Pegas el enlace aquí
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-full sm:w-auto overflow-hidden bg-[#ff4900] text-white px-10 py-4 rounded-xl font-black transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-[#ff4900]/20"
             >
+              {/* Agregué un icono de descarga para que sea más visual */}
+              <i className="fa-solid fa-file-pdf"></i>
               <span className="relative z-10">{t('hero.cv_button')}</span>
+
+              {/* Efecto de brillo que ya tenías */}
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </a>
 
@@ -67,7 +72,7 @@ const Hero = () => {
               onClick={() =>
                 document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })
               }
-              className="w-full sm:w-auto border-2 border-slate-900/10 dark:border-white/10 text-slate-900 dark:text-white px-10 py-4 rounded-xl font-bold hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300"
+              className="w-full sm:w-auto border-2 border-slate-900/10 dark:border-white/10 text-slate-900 dark:text-white px-10 py-4 rounded-xl font-bold hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 cursor-pointer"
             >
               {t('hero.work_button')}
             </button>

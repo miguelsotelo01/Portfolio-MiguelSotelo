@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import freelancerImg from '../assets/freelancer2.webp';
 import { useTranslation } from 'react-i18next';
+import ContactModal from './ContactModal';
 const Freelancer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
   return (
     <section
@@ -19,13 +21,18 @@ const Freelancer = () => {
       </p>
       <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white">{t('freelancer.title')}</h2>
       <div className="pt-4">
-        <a
-          href="mailto:miky.a.sotelo.97@gmail.com"
-          className="bg-[#ff4900] text-white px-10 py-3 rounded-lg font-bold hover:bg-orange-700 transition-all no-underline shadow-xl"
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="bg-[#ff4900] text-white px-10 py-3 rounded-lg font-bold hover:scale-105 active:scale-95 hover:brightness-110 shadow-xl shadow-[#ff4900]/20 transition-all duration-300 cursor-pointer"
         >
           {t('freelancer.button')}
-        </a>
+        </button>
       </div>
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        initialSubject="freelance"
+      />
     </section>
   );
 };

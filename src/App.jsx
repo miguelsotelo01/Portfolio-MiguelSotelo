@@ -9,6 +9,7 @@ import Freelancer from './components/Freelancer';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -38,6 +39,7 @@ function App() {
       <Portfolio />
       <Education />
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }

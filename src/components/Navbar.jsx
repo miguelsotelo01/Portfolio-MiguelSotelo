@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import logoLight from '../assets/logo blanco.png';
 import logoDark from '../assets/logo negro.png';
 import { useTranslation } from 'react-i18next';
+import ContactModal from './ContactModal';
 const Navbar = ({ toggleTheme, theme }) => {
   // Estado para controlar el menú móvil
   const [isOpen, setIsOpen] = useState(false);
-
+  // estado para controlar el modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
   // Función para scroll suave
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -69,7 +71,7 @@ const Navbar = ({ toggleTheme, theme }) => {
               className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-colors"
               onClick={() => scrollToSection('services')}
             >
-              {t('nav.services')}
+              {t('nav.expertise')}
             </li>
             <li
               className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-colors"
@@ -86,7 +88,7 @@ const Navbar = ({ toggleTheme, theme }) => {
           </ul>
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-2xl xl:text-xl flex items-center justify-center"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-2xl xl:text-xl flex items-center justify-center cursor-pointer"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? (
@@ -97,20 +99,26 @@ const Navbar = ({ toggleTheme, theme }) => {
           </button>
           <button
             onClick={toggleLanguage}
-            className="xl:ml-4 text-white xl:text-slate-600 xl:dark:text-gray-400 hover:text-white xl:hover:text-[#ff4900] font-bold transition-colors uppercase tracking-widest text-xl xl:text-sm"
+            className="xl:ml-4 text-white xl:text-slate-600 xl:dark:text-gray-400 hover:text-white xl:hover:text-[#ff4900] font-bold transition-colors uppercase tracking-widest text-xl xl:text-sm cursor-pointer"
           >
             {i18n.language === 'es' ? 'EN' : 'ES'}
           </button>
           <div className="mt-4 xl:mt-0">
-            <a
-              href="mailto:miky.a.sotelo.97@gmail.com"
-              className="bg-[#ff4900] xl:bg-[#ff4900] text-white px-8 py-3 rounded-lg no-underline text-xl xl:text-sm font-bold hover:brightness-110 transition-all"
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="bg-[#ff4900] text-white px-8 py-3 rounded-lg text-xl xl:text-sm font-bold hover:scale-105 active:scale-95 hover:brightness-110 shadow-lg shadow-[#ff4900]/20 transition-all duration-300 cursor-pointer"
             >
               {t('nav.hire_me')}
-            </a>
+            </button>
           </div>
         </div>
       </nav>
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        theme={theme}
+        initialSubject="recruiter"
+      />
     </header>
   );
 };

@@ -2,11 +2,27 @@
   "nav": {
     "page_title": "Miguel A. Sotelo | Desarrollador Web",
     "about": "Sobre mí",
-    "services": "Servicios",
+    "expertise": "Capacidades",
     "portfolio": "Portafolio",
     "contact": "Contacto",
-    "hire_me": "Contrátame",
+    "hire_me": "Contáctame",
     "education": "Educación"
+  },
+  "contact": {
+    "modal_title": "Contáctame",
+    "modal_subtitle": "Déjame tu mensaje",
+    "form_name": "Nombre",
+    "form_email": "Email",
+    "form_subject": "Asunto",
+    "form_message": "Mensaje",
+    "subject_freelance": "Proyecto Freelance",
+    "subject_recruiter": "Propuesta Laboral",
+    "subject_general": "Consulta General",
+    "submit_button": "Enviar Mensaje",
+    "success_title": "¡Envío Exitoso!",
+    "success_text": "He recibido tu mensaje correctamente. Pronto nos pondremos en contacto para empezar a trabajar.",
+    "close_button": "Volver al Sitio",
+    "sending": "Procesando envío..."
   },
   "hero": {
     "greeting": "Hola, bienvenido a mi espacio",
@@ -52,18 +68,21 @@
     "categories": {
       "all": "Todos",
       "landing": "Landing pages",
-      "platform": "Web Applications",
-      "ecommerce": "Mobile Apps",
-      "tasks": "Tools & Logic"
+      "platform": "Aplicaciones web",
+      "ecommerce": "Aplicaciones Moviles",
+      "tasks": "Herramientas y Logica"
     },
     "projects": {
       "p1_desc": "Plataforma de videos hecha en React.",
-      "p2_desc": "E-commerce hecho en React.",
+      "p2_desc": "E-commerce hecho en HTML, CSS y JavaScript.",
       "p3_desc": "Aplicaciones hechas a la medida.",
       "p4_desc": "La red más eficiente.",
       "p5_desc": "Proyecto básico de lista de tareas.",
       "p6_desc": "Encriptador de palabras.",
-      "p7_desc": "Gestión de grupos de trabajo en React."
+      "p7_desc": "Gestión de grupos de trabajo en React.",
+      "p8_desc": "Aplicaciones en la medida.",
+      "P9_desc": "Lista de tareas en Angular 13.",
+      "p10_desc": "PWA gestor de tareas hecha en React."
     }
   },
   "edu": {

@@ -7,8 +7,11 @@ const AboutMe = () => {
 
   // Categorías técnicas para reemplazar las barras planas
   const techCategories = [
-    { title: 'Frontend', skills: ['React', 'Tailwind CSS', 'JavaScript (ES6+)'] },
-    { title: 'Backend & Tools', skills: ['Node.js', 'Git/GitHub', 'Vite'] },
+    {
+      title: 'Frontend',
+      skills: ['React-vite', 'Tailwind CSS', 'JavaScript (ES6+)', 'Angular', 'Astro'],
+    },
+    { title: 'Backend & Tools', skills: ['Springboot', 'Git/GitHub', 'Mysql'] },
     { title: 'Engineering Foundations', skills: ['Logic', 'Data Structures', 'Algorithms'] },
   ];
 

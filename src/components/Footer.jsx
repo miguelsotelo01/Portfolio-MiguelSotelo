@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ContactModal from './ContactModal';
 const Footer = () => {
   const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <footer
       id="contact"
@@ -61,12 +63,12 @@ const Footer = () => {
               <p className="text-sm text-slate-700 dark:text-white">miky.a.sotelo.97@gmail.com</p>
             </div>
           </div>
-          <a
-            href="mailto:miky.a.sotelo.97@gmail.com"
-            className="mt-6 inline-flex items-center gap-2 border border-[#ff4900] text-slate-700 dark:text-[#a3a3a3] px-8 py-2 rounded-lg hover:bg-[#ff4900] hover:text-white transition-all duration-300 no-underline text-sm"
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="mt-6 inline-flex items-center gap-2 bg-[#ff4900] text-white px-8 py-2 rounded-lg hover:scale-105 active:scale-95 hover:brightness-110 shadow-lg shadow-[#ff4900]/20 transition-all duration-300 cursor-pointer text-sm font-bold"
           >
             <i className="fa-solid fa-message"></i> {t('footer.write_me')}
-          </a>
+          </button>
         </div>
 
         {/* Servicios */}
@@ -87,6 +89,12 @@ const Footer = () => {
       <div className="mt-16 text-center text-xs text-slate-500 dark:text-gray-600 border-t border-slate-200 dark:border-white/10 pt-8">
         © {new Date().getFullYear()} Miguel Sotelo. {t('footer.built_with')}
       </div>
+
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        initialSubject="general"
+      />
     </footer>
   );
 };
