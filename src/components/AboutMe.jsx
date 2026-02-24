@@ -57,12 +57,19 @@ const AboutMe = () => {
             </p>
           </div>
 
-          {/* Nueva Grilla de Skills (v2.4) */}
+          {/* Nueva Grilla de Skills (v2.6 - Auditoría) */}
+          {/* Agregamos:
+          1. transition-all duration-300: Para suavizar el movimiento.
+          2. hover:-translate-y-2: Efecto de elevación.
+          3. hover:shadow-xl: Sombra profunda.
+          4. hover:shadow-[#ff4900]/10: Sombra con el color de tu marca.
+      */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
             {techCategories.map((cat, idx) => (
               <div
                 key={idx}
-                className="space-y-3 p-4 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-100 dark:border-white/10"
+                className="space-y-3 p-6 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-100 dark:border-white/10 
+                 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#ff4900]/10 cursor-default"
               >
                 <h4 className="font-black text-[#ff4900] text-sm uppercase tracking-widest">
                   {cat.title}
@@ -77,7 +84,6 @@ const AboutMe = () => {
               </div>
             ))}
           </div>
-
           <div className="pt-6">
             <a
               href="#portfolio"

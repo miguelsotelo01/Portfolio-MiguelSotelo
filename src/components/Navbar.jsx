@@ -62,25 +62,25 @@ const Navbar = ({ toggleTheme, theme }) => {
         >
           <ul className="flex flex-col xl:flex-row list-none gap-8 text-2xl xl:text-base font-medium">
             <li
-              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-colors"
+              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-all duration-300 hover:-translate-y-1"
               onClick={() => scrollToSection('about')}
             >
               {t('nav.about')}
             </li>
             <li
-              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-colors"
+              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-all duration-300 hover:-translate-y-1"
               onClick={() => scrollToSection('services')}
             >
               {t('nav.expertise')}
             </li>
             <li
-              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-colors"
+              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-all duration-300 hover:-translate-y-1"
               onClick={() => scrollToSection('portfolio')}
             >
               {t('nav.portfolio')}
             </li>
             <li
-              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-colors"
+              className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-all duration-300 hover:-translate-y-1"
               onClick={() => scrollToSection('education')}
             >
               {t('nav.education')}
@@ -88,7 +88,7 @@ const Navbar = ({ toggleTheme, theme }) => {
           </ul>
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-2xl xl:text-xl flex items-center justify-center cursor-pointer"
+            className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1 text-2xl xl:text-xl flex items-center justify-center cursor-pointer"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? (
@@ -99,7 +99,7 @@ const Navbar = ({ toggleTheme, theme }) => {
           </button>
           <button
             onClick={toggleLanguage}
-            className="xl:ml-4 text-white xl:text-slate-600 xl:dark:text-gray-400 hover:text-white xl:hover:text-[#ff4900] font-bold transition-colors uppercase tracking-widest text-xl xl:text-sm cursor-pointer"
+            className="xl:ml-4 text-white xl:text-slate-600 xl:dark:text-gray-400 hover:text-white xl:hover:text-[#ff4900] font-bold transition-all duration-300 hover:-translate-y-1 uppercase tracking-widest text-xl xl:text-sm cursor-pointer"
           >
             {i18n.language === 'es' ? 'EN' : 'ES'}
           </button>
