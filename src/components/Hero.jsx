@@ -9,7 +9,7 @@ const Hero = () => {
     <section
       id="home"
       // Agregamos w-full y aseguramos el overflow
-      className="relative min-h-screen lg:min-h-0 lg:py-32 2xl:py-48 w-full max-w-full flex items-center justify-center px-6 overflow-hidden"
+      className="relative min-h-screen pt-28 pb-12 lg:min-h-0 lg:py-32 2xl:py-48 w-full max-w-full flex items-center justify-center px-6 overflow-hidden"
     >
       {/* Círculo decorativo corregido: Eliminamos el valor negativo de right para evitar el scroll */}
       <div className="absolute top-1/4 right-0 w-64 h-64 md:w-96 md:h-96 bg-[#ff4900]/10 blur-[80px] md:blur-[120px] rounded-full -z-10 animate-pulse"></div>
