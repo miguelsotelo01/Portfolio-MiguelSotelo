@@ -65,6 +65,7 @@
   "portfolio": {
     "title": "Mi trabajo",
     "subtitle": "Estos son algunos de los proyectos en los que he trabajado.",
+    "tap_hint": "Toca para ver info",
     "categories": {
       "all": "Todos",
       "landing": "Landing pages",

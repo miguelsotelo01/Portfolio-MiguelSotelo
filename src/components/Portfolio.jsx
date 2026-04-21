@@ -22,12 +22,12 @@ const Portfolio = () => {
         </div>
 
         {/* Filtros Dinámicos */}
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
+        <div className="flex flex-nowrap lg:flex-wrap overflow-x-auto lg:overflow-x-visible justify-start lg:justify-center gap-4 mb-10 pb-4 lg:pb-0 scrollbar-hide snap-x">
           {CATEGORIES.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveFilter(cat.id)}
-              className={`px-4 py-2 text-sm font-medium transition-all border-b-2 ${
+              className={`px-6 py-2 whitespace-nowrap snap-center text-sm font-black transition-all border-b-2 ${
                 activeFilter === cat.id
                   ? 'border-[#ff4900] text-[#ff4900] dark:text-white'
                   : 'border-transparent text-slate-500 dark:text-gray-500 hover:text-slate-900 dark:hover:text-white'
@@ -63,12 +63,23 @@ const ProjectCard = ({ project, t }) => {
       className="group relative h-[350px] overflow-hidden rounded-lg cursor-pointer animate-fadeIn border border-slate-200 dark:border-white/10 shadow-sm hover:shadow-md transition-all duration-300 select-none"
     >
       {/* Imagen con zoom suave */}
+      <div
+        className={`absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:hidden transition-opacity ${isTapped ? 'opacity-0' : 'opacity-100'}`}
+      >
+        <span className="absolute bottom-4 left-0 w-full text-center text-[10px] text-white/80 font-bold uppercase tracking-widest">
+          {t('portfolio.tap_hint') || 'Toca para ver info'}
+        </span>
+      </div>
       <img
         src={project.img}
         alt={project.title}
         className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
       />
-
+      <div
+        className={`absolute top-3 right-3 lg:hidden bg-black/50 backdrop-blur-md text-white p-2 rounded-full transition-opacity duration-300 ${isTapped ? 'opacity-0' : 'opacity-100'}`}
+      >
+        <i className="fa-solid fa-hand-pointer animate-bounce text-xs"></i>
+      </div>
       {/* Overlay: Ahora responde tanto al hover de PC como al isTapped de móvil */}
       <div
         className={`absolute inset-0 bg-[#ff4900]/90 backdrop-blur-sm transition-all duration-400 flex flex-col items-center justify-center text-center px-6 
