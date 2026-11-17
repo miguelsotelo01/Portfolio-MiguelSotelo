@@ -22,7 +22,10 @@ const Portfolio = () => {
         </div>
 
         {/* Filtros Dinámicos */}
-        <div className="flex flex-nowrap lg:flex-wrap overflow-x-auto lg:overflow-x-visible justify-start lg:justify-center gap-4 mb-10 pb-4 lg:pb-0 scrollbar-hide snap-x">
+        <div
+          className="flex flex-nowrap lg:flex-wrap overflow-x-auto lg:overflow-x-visible justify-start lg:justify-center gap-4 mb-10 pb-4 lg:pb-0 scrollbar-hide snap-x [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none]"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
           {CATEGORIES.map((cat) => (
             <button
               key={cat.id}
@@ -85,6 +88,17 @@ const ProjectCard = ({ project, t }) => {
         className={`absolute inset-0 bg-[#ff4900]/90 backdrop-blur-sm transition-all duration-400 flex flex-col items-center justify-center text-center px-6 
         ${isTapped ? 'opacity-100' : 'opacity-0'} group-hover:opacity-100`}
       >
+        <button
+          type="button"
+          aria-label="Cerrar informacion del proyecto"
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsTapped(false);
+          }}
+          className={`lg:hidden absolute top-3 left-3 w-9 h-9 rounded-full bg-black/25 text-white text-xl flex items-center justify-center transition-opacity ${isTapped ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
+        >
+          &times;
+        </button>
         {/* Título: Ajustamos el translate-y según el estado isTapped */}
         <h3
           className={`text-2xl font-bold transition-transform duration-300 

@@ -13,4 +13,17 @@
   body {
     @apply transition-colors duration-500;
   }
+
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

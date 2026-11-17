@@ -54,13 +54,14 @@ const Navbar = ({ toggleTheme, theme }) => {
         {/* Links de navegación */}
         <div
           className={`
-          fixed xl:static top-0 right-0 h-screen xl:h-auto w-full xl:w-auto
-          bg-[#ff4900] xl:bg-transparent flex flex-col xl:flex-row items-center justify-center gap-8
+          fixed xl:static top-0 right-0 h-[100dvh] xl:h-auto w-full xl:w-auto
+          bg-[#ff4900] xl:bg-transparent flex flex-col xl:flex-row items-center justify-center gap-5 xl:gap-8
+          py-16 sm:py-20 xl:py-0 overflow-y-auto xl:overflow-visible
           transition-transform duration-500 ease-in-out z-40
           ${isOpen ? 'translate-x-0' : 'translate-x-full xl:translate-x-0'}
         `}
         >
-          <ul className="flex flex-col xl:flex-row list-none gap-8 text-2xl xl:text-base font-medium">
+          <ul className="flex flex-col xl:flex-row list-none gap-4 xl:gap-8 text-2xl xl:text-base font-medium">
             <li
               className="cursor-pointer text-slate-900 dark:text-white hover:bg-[#ff4900] xl:hover:bg-transparent xl:hover:text-[#ff4900] p-4 transition-all duration-300 hover:-translate-y-1"
               onClick={() => scrollToSection('about')}
